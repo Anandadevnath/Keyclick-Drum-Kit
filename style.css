@@ -1,0 +1,44 @@
+body {
+  background-image: url(Drum\ kit.jpg);
+  background-size: cover;
+  color: white;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.keys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.key {
+  position: relative;
+  top: 353px;
+  padding: 26px;
+  margin: 20px;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.088);
+  border-radius: 11px;
+  transition: all 0.07s;
+}
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+.key kbd {
+  position: relative;
+  top: -12px;
+  left: 16px;
+  font-size: 2.3rem;
+}
+.key span {
+  position: relative;
+  top: 11px;
+  left: -11px;
+}
+.key[data-key="70"] kbd {
+  position: relative;
+  top: -11px;
+  left: 30px;
+}
